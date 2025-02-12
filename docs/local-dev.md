@@ -9,7 +9,7 @@ Then, clone the repository:
     cd snapdrop
     docker-compose up -d
 ```
-Now point your browser to `http://localhost:8111`.
+Now point your browser to `http://localhost:8321`.
 
 - To restart the containers run `docker-compose restart`.
 - To stop the containers run `docker-compose stop`.
@@ -23,9 +23,9 @@ Have docker installed, then use the command:
     docker pull linuxserver/snapdrop
 ```
 
-To run the image, type (if port 8111 is occupied by host use another random port <random port>:80):
+To run the image, type (if port 8321 is occupied by host use another random port <random port>:80):
 ```
-    docker run -d -p 8111:80 linuxserver/snapdrop
+    docker run -d -p 8321:80 linuxserver/snapdrop
 ```
 
 
@@ -38,10 +38,10 @@ PWAs require that the app is served under a correctly set up and trusted TLS end
 
 The nginx container creates a CA certificate and a website certificate for you. To correctly set the common name of the certificate, you need to change the FQDN environment variable in `docker/fqdn.env` to the fully qualified domain name of your workstation.
 
-If you want to test PWA features, you need to trust the CA of the certificate for your local deployment. For your convenience, you can download the crt file from `http://<Your FQDN>:8111/ca.crt`. Install that certificate to the trust store of your operating system.
+If you want to test PWA features, you need to trust the CA of the certificate for your local deployment. For your convenience, you can download the crt file from `http://<Your FQDN>:8321/ca.crt`. Install that certificate to the trust store of your operating system.
 - On Windows, make sure to install it to the `Trusted Root Certification Authorities` store.
 - On MacOS, double click the installed CA certificate in `Keychain Access`, expand `Trust`, and select `Always Trust` for SSL.
-- Firefox uses its own trust store. To install the CA, point Firefox at `http://<Your FQDN>:8111/ca.crt`. When prompted, select `Trust this CA to identify websites` and click OK.
+- Firefox uses its own trust store. To install the CA, point Firefox at `http://<Your FQDN>:8321/ca.crt`. When prompted, select `Trust this CA to identify websites` and click OK.
 - When using Chrome, you need to restart Chrome so it reloads the trust store (`chrome://restart`). Additionally, after installing a new cert, you need to clear the Storage (DevTools -> Application -> Clear storage -> Clear site data).
 
 Please note that the certificates (CA and webserver cert) expire after a day.
