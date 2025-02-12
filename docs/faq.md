@@ -18,7 +18,7 @@ if you are using a Chromium-based browser (Chrome, Edge, Brave, etc.), you can e
 It uses a P2P connection if WebRTC is supported by the browser. WebRTC needs a Signaling Server, but it is only used to establish a connection and is not involved in the file transfer.
 
 ### What about privacy? Will files be saved on third-party-servers?
-None of your files are ever sent to any server. Files are sent only between peers. Snapdrop doesn't even use a database. If you are curious have a look [at the Server](https://github.com/RobinLinus/snapdrop/blob/master/server/). Even if Snapdrop was able to view the files being transfered, WebRTC encrypts the files on transit, so the server would be unable to read them.
+None of your files are ever sent to any server. Files are sent only between peers. Snapdrop doesn't even use a database. If you are curious have a look [at the Server](https://github.com/kasper334/snapdrop/blob/master/server/). Even if Snapdrop was able to view the files being transfered, WebRTC encrypts the files on transit, so the server would be unable to read them.
 
 ### What about security? Are my files encrypted while being sent between the computers?
 Yes. Your files are sent using WebRTC, which encrypts them on transit.
@@ -32,7 +32,7 @@ If you want to learn more about simplicity you can read [Insanely Simple: The Ob
 
 ### Snapdrop is awesome! How can I support it? 
 * [Donate via PayPal to help cover the server costs](https://www.paypal.com/donate/?hosted_button_id=FTP9DXUR7LA7Q)
-* [File bugs, give feedback, submit suggestions](https://github.com/RobinLinus/snapdrop/issues)
+* [File bugs, give feedback, submit suggestions](https://github.com/kasper334/snapdrop/issues)
 * Share Snapdrop on your social media.
 * Fix bugs and make a pull request. 
 * Do security analysis and suggestions
