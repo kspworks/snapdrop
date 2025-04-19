@@ -11,14 +11,14 @@
 * [Producthunt](https://www.producthunt.com/posts/snapdrop)
 
 ### Help! I can't install the PWA!
-if you are using a Chromium-based browser (Chrome, Edge, Brave, etc.), you can easily install Snapdrop PWA on your desktop by clicking the install button in the top-right corner while on [snapdrop.net](https://snapdrop.net) (see below).
+if you are using a Chromium-based browser (Chrome, Edge, Brave, etc.), you can easily install Snapdrop PWA on your desktop by clicking the install button in the top-right corner while on site (see below).
 <img src="pwa-install.png">
 
 ### What about the connection? Is it a P2P-connection directly from device to device or is there any third-party-server?
 It uses a P2P connection if WebRTC is supported by the browser. WebRTC needs a Signaling Server, but it is only used to establish a connection and is not involved in the file transfer.
 
 ### What about privacy? Will files be saved on third-party-servers?
-None of your files are ever sent to any server. Files are sent only between peers. Snapdrop doesn't even use a database. If you are curious have a look [at the Server](https://github.com/kasper334/snapdrop/blob/master/server/). Even if Snapdrop was able to view the files being transfered, WebRTC encrypts the files on transit, so the server would be unable to read them.
+None of your files are ever sent to any server. Files are sent only between peers. Snapdrop doesn't even use a database. If you are curious have a look [at the Server](https://github.com/kspworks/snapdrop/blob/master/server/). Even if Snapdrop was able to view the files being transfered, WebRTC encrypts the files on transit, so the server would be unable to read them.
 
 ### What about security? Are my files encrypted while being sent between the computers?
 Yes. Your files are sent using WebRTC, which encrypts them on transit.
@@ -31,27 +31,10 @@ If you want to learn more about simplicity you can read [Insanely Simple: The Ob
 
 
 ### Snapdrop is awesome! How can I support it? 
-* [Donate via PayPal to help cover the server costs](https://www.paypal.com/donate/?hosted_button_id=FTP9DXUR7LA7Q)
-* [File bugs, give feedback, submit suggestions](https://github.com/kasper334/snapdrop/issues)
+* [File bugs, give feedback, submit suggestions](https://github.com/kspworks/snapdrop/issues)
 * Share Snapdrop on your social media.
 * Fix bugs and make a pull request. 
 * Do security analysis and suggestions
-
-
-## "Inofficial" Instances
-Here's a list of other people hosting inofficial instances of Snapdrop:
-- https://pairdrop.net/
-- https://snapdrop.k26.ch/
-- https://snapdrop.9pfs.repl.co/
-- https://filedrop.codext.de/
-- https://s.hoothin.com/
-- https://www.wulingate.com/
-- https://snapdrop.fairysoft.net/
-- https://airtransferer.web.app/
-- https://drop.wuyuan.dev
-- https://share.jck.cx
-
-DISCLAIMER: WE ARE NOT IN ANY WAY AFFILIATED WITH THE PEOPLE WHO RUN THESE INSTANCES. WE DO NOT KNOW THEM. WE CANNOT VERIFY THE CODE THEY ARE RUNNING!
 
 
 ## Third-Party Apps

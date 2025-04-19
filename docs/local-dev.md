@@ -5,7 +5,7 @@ First, [Install docker with docker-compose.](https://docs.docker.com/compose/ins
 
 Then, clone the repository:
 ```
-    git clone https://github.com/kasper334/snapdrop.git
+    git clone https://github.com/kspworks/snapdrop.git
     cd snapdrop
     docker-compose up -d
 ```
@@ -14,20 +14,6 @@ Now point your browser to `http://localhost:8321`.
 - To restart the containers run `docker-compose restart`.
 - To stop the containers run `docker-compose stop`.
 - To debug the NodeJS server run `docker logs snapdrop_node_1`.
-
-
-## Run locally by pulling image from Docker Hub
-
-Have docker installed, then use the command:
-```
-    docker pull linuxserver/snapdrop
-```
-
-To run the image, type (if port 8321 is occupied by host use another random port <random port>:80):
-```
-    docker run -d -p 8321:80 linuxserver/snapdrop
-```
-
 
 
 
